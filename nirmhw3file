@@ -82,3 +82,40 @@ AC FA 81 B0 A7 6E 7D 42 CD 47 A4 CF EE AE 42 37 D6 CB 3B A5 61 BE 2E 4C D2 68 85
 17 4D 03 F6 FD 12 E7 3E 9B 5C ED DE FA AA C3 9F CF 8C DD 77 BA D1 65 BB C2 74 40 E3 D1 64 1D 45 CF A0 9D 27 D6 4B D4 EC 95 2
 
 That is only the beggining, then I swear I was high, but it was actually the program
+
+Example of looking af other commans for apt-get:
+
+ubuntu@ip-172-31-19-52:~/homework-03/nirmhw3$ man apt-get
+
+ remove
+           remove is identical to install except that packages are removed instead of installed. Note that removing a
+           package leaves its configuration files on the system. If a plus sign is appended to the package name (with no
+           intervening space), the identified package will be installed instead of removed.
+
+       purge
+           purge is identical to remove except that packages are removed and purged (any configuration files are deleted
+           too).
+
+ubuntu@ip-172-31-19-52:~/homework-03/nirmhw3$ apt-get purge bb
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+
+Example of how to remove after googling:
+
+ubuntu@ip-172-31-19-52:~$ sudo apt-get purge bb
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libaa1 libcaca0 libmikmod3 libopenal-data libopenal1 libsdl1.2debian
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  bb*
+0 upgraded, 0 newly installed, 1 to remove and 4 not upgraded.
+After this operation, 1,893 kB disk space will be freed.
+Do you want to continue? [Y/n] yes
+(Reading database ... 281484 files and directories currently installed.)
+Removing bb (1.3rc1-8.4) ...
+Purging configuration files for bb (1.3rc1-8.4) ...
+Processing triggers for man-db (2.7.5-1) ...
+
