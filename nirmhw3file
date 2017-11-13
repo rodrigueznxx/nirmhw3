@@ -72,3 +72,13 @@ Setting up libmikmod3:amd64 (3.3.8-2) ...
 Setting up bb (1.3rc1-8.4) ...
 Processing triggers for libc-bin (2.23-0ubuntu9) ...
 
+Example of the weirdness after running bb
+
+ubuntu@ip-172-31-19-52:~/homework-03/nirmhw3$ bb
+
+7B 16 B6 E8 F6 BA B0 2A F5 22 39 9B 94 E0 41 C7 44 7D BF 9A 9B CB A7 7F 11 3F FD A7 DB 9A 13 5B FB FE F6 3F 34 EA BA B7 86 BB
+E8 63 FF ED 13 04 DD F2 F2 5C 55 02 9F BD EB E4 CD A0 6E E9 2E D9 8D 3A 35 A5 5C 0C AE D0 15 D2 58 7C 13 AB DD 3C A2 5A C7 A9
+AC FA 81 B0 A7 6E 7D 42 CD 47 A4 CF EE AE 42 37 D6 CB 3B A5 61 BE 2E 4C D2 68 85 E5 FB 83 D8 01 3C C4 87 4D D5 F3 79 E2 CD 1E
+17 4D 03 F6 FD 12 E7 3E 9B 5C ED DE FA AA C3 9F CF 8C DD 77 BA D1 65 BB C2 74 40 E3 D1 64 1D 45 CF A0 9D 27 D6 4B D4 EC 95 2
+
+That is only the beggining, then I swear I was high, but it was actually the program
