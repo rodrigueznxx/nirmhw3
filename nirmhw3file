@@ -1,1 +1,12 @@
 Test file for Homework 3
+
+Example of checking for software availability
+
+ubuntu@ip-172-31-19-52:~/homework-03/nirmhw3$ apt-cache policy bb
+bb:
+  Installed: (none)
+  Candidate: 1.3rc1-8.4
+  Version table:
+     1.3rc1-8.4 500
+        500 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+
